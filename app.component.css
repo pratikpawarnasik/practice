@@ -1,0 +1,10 @@
+.button1 {
+    background-color: #008CBA;
+    padding: 5px;
+    color: azure;
+    /* font-size: 16px; */
+} /* Green */
+.input-comment{
+    height: 30px;
+    padding: 0px
+}

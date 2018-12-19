@@ -1,0 +1,15 @@
+<div class="col-md-12">
+  <div class="col-md-6"></div>
+  <div class="col-md-6">
+    <input type="text" [(ngModel)]="newComment" placeholder="Insert Your comment" class="input-comment" required><button class="button1" (click)="addComment()">Add comment</button>
+
+    <span  *ngFor="let item of commentArray; let i = index">
+      <h3>{{i+1}}. {{item.commentTitle}}</h3>
+      <h4>
+        <button class="" (click)="addLike(i)" [ngClass]="{'button1' : item.islike}"><i class='far fa-thumbs-up' style='font-size:20px'></i> {{item.like_cnt}}</button> &nbsp;&nbsp;
+        <button  class="" (click)="addDisLike(i)" [ngClass]="{'button1' : item.isDislike}"><i class='far fa-thumbs-down' style='font-size:25px'></i> {{item.dislike_cnt}}</button>
+      </h4>
+    </span>
+  </div>
+</div>
+
